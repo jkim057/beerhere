@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import Logo from './component/Logo'
+import Search from './component/Search'
+import List from './component/List'
+import Viewer from './component/Viewer'
 import './App.css';
 
 function App() {
+  {function findBeer(){
+    const url = 'https://api.openbrewerydb.org/breweries?'
+    fetch(url)
+        .then(res => res.json())
+        .then(resJson=> {
+            console.log(resJson)
+        } )
+        .catch(console.error)
+        }}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="framework">
+      
+      
+  
+      <Logo />
+      <Search />
+      <List />
+      <Viewer />
     </div>
   );
 }
