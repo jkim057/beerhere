@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import { Link } from 'react-router-dom'
+
 
 const Viewer = ({ views }) => {
     return (
@@ -11,7 +11,7 @@ const Viewer = ({ views }) => {
                            <p>{`${view.city}, ${view.state}`}</p>
                            <a href={view.website_url}>{view.website_url}</a>
 
-                            {console.log(view)}
+                            {/* {console.log(view)} */}
                         </div>
                 )
             })}

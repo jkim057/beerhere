@@ -1,20 +1,25 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import{ List, Logo, Search, Viewer} from './component'
 
 import './App.css';
 
 function App() {
   const [views, setViews] = useState([])
-  const url = 'https://api.openbrewerydb.org/breweries?by_city=san_diego'
+  const [cities, setCities] = useState("")
+
+  // const url = 'https://api.openbrewerydb.org/breweries?by_city=chicago'
+  // {`${view.city}, ${view.state}`}
+  // {`${url}`}
   useEffect(() => {
-      fetch(url)
+      fetch(`https://api.openbrewerydb.org/breweries?by_city=${cities}`)
           .then((res) => res.json())
           .then((resJson) => {
             setViews(resJson)
             // console.log(resJson)
           })
           .catch(console.error)
-  }, [])
+  }, [cities])
+
 
   return (
     
@@ -28,8 +33,9 @@ function App() {
 
       <Search />
       {/* When cities are entered, breweries will show up in the viewer. */}
-      
-      <List />
+
+      {/* onClick={onClick} */}
+      <List views={views} cities={cities} setCities={setCities}/>
       {/* list of popular cities (either by population or most breweries in the area), and when those cities are clicked, the viewer is updated to breweries in that city. */}
       
       <Viewer views={views}/>

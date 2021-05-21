@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
-const List = () => {
+const List = ({ views, cities, setCities }) => {
+    function handleChange(e) {
+        setCities(e.target.id)
+
+    }
+const popPlaces = ["new_york","los_angeles", "chicago", "houston", "phoenix", "philadelphia","san_diego","dallas","austin","boston" ]
     return (
         <div>
             <p>LIST</p>
-            
- {/* premade list of cities */}
-{/* new_york
-los_angeles
-chicago
-houston
-phoenix
-philadelphia
-san_diego
-dallas
-austin
-boston
-
- ${by_city=}{city} */}
-        </div>
+            <section className="mainCities">
+            {popPlaces.map((pop) => {
+                return(
+                        <div className="cityCard" key={pop}>
+                            <Link id={pop} onClick={handleChange}>{pop}</Link>
+                        </div>
+                )
+            })}
+            </section>
+        </div>        
+ 
     );
 };
 
