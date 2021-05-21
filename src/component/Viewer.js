@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Viewer = () => {
+    const [views,setViews] = useState([]);
     return (
         <div>
             <p>VIEWER</p>
