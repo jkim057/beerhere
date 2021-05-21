@@ -1,11 +1,23 @@
 import React, {useState} from 'react';
+// import { Link } from 'react-router-dom'
 
-const Viewer = () => {
-    const [views,setViews] = useState([]);
+const Viewer = ({ views }) => {
     return (
-        <div>
-            <p>VIEWER</p>
-        </div>
+        <section className="container">
+            {views.map((view) => {
+                return(
+                        <div className="card" key={view.id}>
+                           <p>{view.name}</p> 
+                            <p>{`${view.city}, ${view.state}`}</p>
+                            <a href={view.website_url}>{view.website_url}</a>
+
+                            {console.log(view)}
+                        </div>
+                )
+            })}
+        </section>
+
+
     );
 };
 
