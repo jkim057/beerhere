@@ -8,8 +8,8 @@ const Viewer = ({ views }) => {
                 return(
                         <div className="card" key={view.id}>
                            <p>{view.name}</p> 
-                            <p>{`${view.city}, ${view.state}`}</p>
-                            <a href={view.website_url}>{view.website_url}</a>
+                           <p>{`${view.city}, ${view.state}`}</p>
+                           <a href={view.website_url}>{view.website_url}</a>
 
                             {console.log(view)}
                         </div>
