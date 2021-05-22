@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import{ List, Logo, Search, Viewer} from './component'
+import { Route } from 'react-router-dom'
 
 import './App.css';
 
 function App() {
-  const [views, setViews] = useState([])
-  const [cities, setCities] = useState("")
+  const [views, setViews] = useState([]);
+  const [cities, setCities] = useState("");
+  const [search, setSearch] = useState("");
+  
 
  
   useEffect(() => {
@@ -16,7 +19,7 @@ function App() {
             // console.log(resJson)
           })
           .catch(console.error)
-  }, [cities])
+  }, [cities,search])
 
 
   return (
@@ -26,10 +29,10 @@ function App() {
       
   
       {/* <Route path ="/"  /> */}
-      <Logo />
+      <Route path="/" exact component={Logo} />
       {/* logo to refresh the page */}
 
-      <Search />
+      <Search views={views} cities={cities} setCities={setCities} search={search} setSearch={setSearch}/>
       {/* When cities are entered, breweries will show up in the viewer. */}
 
       {/* onClick={onClick} */}

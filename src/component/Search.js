@@ -1,17 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
-const Search = () => {
+const Search =  ({views, cities, setCities, search, setSearch}) => {
+
+
+     function inputCleaner(e){
+         e.preventDefault()
+        console.log(e)
+        // let e.toLowerCase()
+    }
+
+    
+    // function handleChange(e) {
+    //     setCities(e.target.value)
+
+    // }
+
+
+
     return (
         <div>
-            <input type="text" placeholder="Search"/>
-            {/* 
+            <section className="searchCityContainer">
+        
+            </section>
+            <div>
+                <form onSubmit={inputCleaner}>
+                    <input value="" id="searchingInput" type="text" placeholder="Search Cities"/>  
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+
+     
+        </div>        
+    );
+  {/* 
             * if mispelled, return a error message to the user (" please check your spelling and try again")
+            *take the string and make undercase
             * search.split(" ")
-            * take the string and make undercase
+            *
             * seperate all spaces with _ (underscores) */}
 
-        </div>
-    );
 };
 
 export default Search;

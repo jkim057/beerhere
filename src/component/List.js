@@ -6,7 +6,8 @@ const List = ({ views, cities, setCities }) => {
         setCities(e.target.id)
 
     }
-const popPlaces = ["new_york","los_angeles", "chicago", "houston", "phoenix", "philadelphia","san_diego","dallas","austin","boston" ]
+    const popPlaces = ["new_york","los_angeles", "chicago", "houston", "phoenix", "philadelphia","san_diego","dallas","austin","boston" ]
+
     return (
         <div>
             <p>Not sure where to get started? </p> <p>Take a look one of these cities below!</p>
