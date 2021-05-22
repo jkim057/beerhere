@@ -34,4 +34,4 @@ https://www.openbrewerydb.org/
 1. Set up GPS and link to google maps for directions.
 
 ## Notes:
-1. 
+1. Struggling to setup the search form to target the text input. Currently getting a way too large view of the function I think, and probably not being able to find the text in the search bar. Submitted problem issue for resolution.

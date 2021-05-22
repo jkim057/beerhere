@@ -6,7 +6,7 @@ const Search =  ({views, cities, setCities, search, setSearch}) => {
 
      function inputCleaner(e){
          e.preventDefault()
-        console.log(e)
+        console.log(e.target)
         // let e.toLowerCase()
     }
 
@@ -20,17 +20,12 @@ const Search =  ({views, cities, setCities, search, setSearch}) => {
 
     return (
         <div>
-            <section className="searchCityContainer">
-        
-            </section>
-            <div>
+            <div className="searchCityContainer" >
                 <form onSubmit={inputCleaner}>
-                    <input value="" id="searchingInput" type="text" placeholder="Search Cities"/>  
-                    <button type="submit">Go</button>
+                    <input  id="searchingInput" type="text" placeholder="Search Cities"/>  
+                    <button  type="submit">Go</button>
                 </form>
             </div>
-
-     
         </div>        
     );
   {/* 
