@@ -7,9 +7,7 @@ function App() {
   const [views, setViews] = useState([])
   const [cities, setCities] = useState("")
 
-  // const url = 'https://api.openbrewerydb.org/breweries?by_city=chicago'
-  // {`${view.city}, ${view.state}`}
-  // {`${url}`}
+ 
   useEffect(() => {
       fetch(`https://api.openbrewerydb.org/breweries?by_city=${cities}`)
           .then((res) => res.json())

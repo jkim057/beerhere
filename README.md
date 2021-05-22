@@ -15,16 +15,23 @@ OpenBrewery DB:
 https://www.openbrewerydb.org/
 
 # MVP Goals
-1. Website to actually pull the APi information.
-1. website to display brewery information.
-1. Website to actually search cities for breweries.
-1. Website to actually display breweries from the list of preselected cities.
+1. Website to actually pull the API information. ✅
+1. website to display brewery information. ✅
+1. Website to actually search cities for breweries. 
+1. Website to actually display breweries from the list of preselected cities. ✅
 
 ## Stretch Goals
 # Bronze:
 1. aesthetics, functioning logo that refreshes the page.
-2. link to the website.
+1. link to the website. ✅
+1. Scroll bar in Viewer.
+1. Add styling to make presentable.
+
+# Silver:
 
 # Gold:
 
 1. Set up GPS and link to google maps for directions.
+
+## Notes:
+1. 
