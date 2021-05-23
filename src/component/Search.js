@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const Search =  ({views, cities, setCities, handleSubmit, handleChange, searchInput}) => {
 
     return (
-        <form onSubmit = {handleSubmit}className="form-horizontal searchCityCtnr">
+        <form onSubmit = {handleSubmit} className="form-horizontal searchCityCtnr">
             <input 
                 placeholder="Search Cities" 
                 type="text" 

@@ -10,18 +10,25 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
 
   function handleChange(event) {
+    console.log(event.target.value)
     setSearchInput(event.target.value);
+       // inputCleaner();
   }
   
-//   function inputCleaner(event){
-//     event.preventDefault()
-//    console.log(e.target)
-//    // let e.toLowerCase()
+  // function inputCleaner(event){
+  //   event.preventDefault()
+  //   console.log(event.target.value)
+   // let e.toLowerCase()
+               // * if mispelled, return a error message to the user (" please check your spelling and try again")
+            // *take the string and make undercase
+            // * search.split(" ")
+            // *
+            // * seperate all spaces with _ (underscores)
 // }
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(event.target)
+    // console.log(event.target.value)
     // inputCleaner();
   }
 
@@ -55,6 +62,9 @@ function App() {
         cities={cities} 
         setCities={setCities} 
         searchInput={searchInput} 
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+
         />
       {/* When cities are entered, breweries will show up in the viewer. */}
 
