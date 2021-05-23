@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 
 
 const Viewer = ({ views }) => {
+    if(!views.length){
+        return <h2>Loading...</h2>
+    }
     return (
         <section className="container">
             {views.map((view) => {

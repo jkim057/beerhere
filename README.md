@@ -35,3 +35,4 @@ https://www.openbrewerydb.org/
 
 ## Notes:
 1. Struggling to setup the search form to target the text input. Currently getting a way too large view of the function I think, and probably not being able to find the text in the search bar. Submitted problem issue for resolution.
+2. Trying to use the react-giphy-seacher repo for clarification on the not functioning search function
