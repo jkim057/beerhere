@@ -11,13 +11,17 @@ function App() {
 
   function handleChange(event) {
     console.log(event.target.value)
+    
+
+    }
     setSearchInput(event.target.value);
        // inputCleaner();
   }
   
-  // function inputCleaner(event){
-  //   event.preventDefault()
-  //   console.log(event.target.value)
+  function inputCleaner(event){
+    let stgCk = event.target.value
+    stgCk = stgCk.split(" ")
+
    // let e.toLowerCase()
                // * if mispelled, return a error message to the user (" please check your spelling and try again")
             // *take the string and make undercase
