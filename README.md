@@ -21,14 +21,17 @@ OpenBrewery DB:
 https://www.openbrewerydb.org/
 
 ## Major Hurdles/Unresolved issues:
-1. Struggling to setup the search form to target the text input. Currently getting a way too large view of the function I think, and probably not being able to find the text in the search bar. Submitted problem issue for resolution. Edit: ➡️ Trying to use the react-giphy-seacher repo for clarification on the not functioning search function.
-EDIT 2: Restructured search components so that handleSubmit and handleChange are on app level and can pass down as props. This also allows the searchbar to save the value of the searchbar input ✅
+1. Struggling to setup the search form to target the text input. Currently getting a way too large view of the function I think, and probably not being able to find the text in the search bar. Submitted problem issue for resolution.  ➡️ Edit: Trying to use the react-giphy-seacher repo for clarification on the not functioning search function.
+➡️ EDIT 2: Restructured search components so that handleSubmit and handleChange are on app level and can pass down as props. This also allows the searchbar to save the value of the searchbar input ✅
+1. Currently working to resolve white space issue
 
 #### Priorities:
 #####  SEARCH BAR NOTES: 
  1. Current search bar input is checked at every single new string being entered. (just changing the handle change on the click breaks things). Need to change so that search only happens once go button is clicked.
- 1. Need to setup spacing and edge case projection.
+ 2. Need to setup spacing and edge case projection.
  ➡️ ➡️ Would prevent !@#$%^&*() symbols from being used & return a error message to the user.
+
+ 3. Created a function that would change all uppercase letters to lowercase and replaces white space with underscores, but doesn't work for the 3rd word. Why?
 #### Viewer Notes:
 1. Current view only lists 25 results. Need to create option to keep searching for other results.
 1. Need to create scroll bar to view other results.
