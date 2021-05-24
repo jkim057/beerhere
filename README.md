@@ -6,7 +6,7 @@
 There is a list of cities that users can choose from, or search for a city on their own.
 
 ## Deployment:
-TBA
+Check it out here! https://jok-beerhere.herokuapp.com/
 
 ## Wireframes:
 
@@ -31,6 +31,7 @@ https://www.openbrewerydb.org/
 2. Need cleanedInput directly be set to the value of Cities so that the URL updates automatically. Feels like previous question and this question are linked in a significant way.
     ➡️ Edit: Took the event.target.value, ran it through the cleanup operation(I had to remove it ) ✅
 3. Attempted to reduce things down to just 1 fetch call, but realized that because the variable used for the list only has onChange with no onSubmit, any change in the state(like every single keypress of a city name) will call the fetch. Unless I want to build a handleSubmit for the list component, I'm better off leaving it as it is.
+1.
 
 #### Priorities:
 #####  SEARCH BAR NOTES: 
@@ -42,8 +43,10 @@ https://www.openbrewerydb.org/
 1. Need to create scroll bar to view other results.
 
 #### Unsorted notes:
-1. There is a ``` index.js:1 Warning: Failed prop type: The prop `to` is marked as required in `Link`, but its value is `undefined`. ``` issue listed in my console.log, but does not critically break code as of right now. I do ## Sources:
-1. Created react App with : https://github.com/facebook/create-react-appneed to address it in the future.
+1. There is a ``` index.js:1 Warning: Failed prop type: The prop `to` is marked as required in `Link`, but its value is `undefined`. ``` issue listed in my console.log, but does not critically break code as of right now. Will address in the future.
+
+## Resources:
+1. Created react App with : https://github.com/facebook/create-react-appneed 
 
 
 
@@ -51,7 +54,7 @@ https://www.openbrewerydb.org/
 
 
 # Future Plans
-## MVP Goals
+## MVP
 1. Website to actually pull the API information. ✅
 1. website to display brewery information. ✅
 1. Website to actually search cities for breweries. ✅

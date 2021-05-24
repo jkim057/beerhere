@@ -15,30 +15,34 @@ code {
 /* top level, contains all the components */
 .framework{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 150px 2fr;
 }
 
-/* Contains the description of each brewery */
+ .sideBar{
+   background-color: cornflowerblue;
+ }
+
+
+/* Contains the description of all breweries */
 .container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  /* grid-template-columns: 1rem 1rem 1rem; */
-  gap: 10px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr;  */
+  /* gap: 10px; */
+  display:flex;
+  flex-wrap:wrap;
+  gap: 5px;
+  
 }
 
+ /* contains individual brewery details */
 .card{
   border: 1px solid black;
-  max-width: 100%;
-  margin: 10px;
-  padding: 2px;
+  width: 180px;
+  height: 200px;
+  margin: 1px;
+  padding: 1px;
 }
 
 
 
 
-.truncate {
-  width: 250px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}

@@ -49,10 +49,15 @@ function App() {
     
     <div className="framework">
       {/* <Route path ="/"  /> */}
-      <Route path="/" exact component={Logo} />
+      <Route 
+        className="sideBar"
+        path="/" 
+        exact component={Logo} 
+        />
       {/* logo to refresh the page */}
 
       <Search 
+        className="sideBar"
         views={views} 
         cities={cities} 
         setCities={setCities} 
@@ -65,6 +70,7 @@ function App() {
 
       {/* onClick={onClick} */}
       <List 
+        className="sideBar"
         views={views} 
         cities={cities} 
         setCities={setCities}

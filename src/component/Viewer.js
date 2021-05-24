@@ -12,8 +12,13 @@ const Viewer = ({ views }) => {
                         <div className="card" key={view.id}>
                            <p>{view.name}</p> 
                            <p>{`${view.city}, ${view.state}`}</p>
-                           {/* style={{width: "100%"}} */}
-                           <a href={view.website_url}>{view.website_url}</a>
+                                {
+                                    view.website_url &&  <a target="_blank" href={view.website_url}>View Website</a>
+                                }
+
+
+
+                         
 
                             {/* {console.log(view)} */}
                         </div>
