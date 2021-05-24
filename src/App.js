@@ -10,42 +10,24 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
 
   function handleChange(event) {
-   
-    // console.log(inputCleaner(event))
-    // moved contents of input cleaner inside handle change.
-    // was this the right call?
-
-    // let stgCk = event.target.value
-    // stgCk = stgCk.toLowerCase()
-    // stgCk = stgCk.replaceAll(" ", "_" )
-   
-    // console.log(stgCk)
-
-
-    
-    // setSearchInput(stgCk);
-
-    //backup set search
-    setSearchInput(event.target.value);
-    
-       // inputCleaner();
-  }
-   
-  function inputCleaner(event){
     let stgCk = event.target.value
     stgCk = stgCk.toLowerCase()
     stgCk = stgCk.replaceAll(" ", "_" )
-    return stgCk
-    // console.log(stgCk)
-    //white space works for the first 2 words, but not the 3rd. why?
-  }
-
-
-
+    setSearchInput(stgCk);  
+    // what happens if I set stgCk to the cities state, then told submit to run the getBrews function? would that make a infinite loop?
+  }  
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(event.target.value)
-    // inputCleaner();
+    console.log(searchInput)
+    fetch(`https://api.openbrewerydb.org/breweries?by_city=${searchInput}`)
+    .then((res) => res.json())
+    .then((resJson) => {
+      setViews(resJson)
+      // console.log(resJson)
+    })
+    .catch(console.error)
+    // console.log(event.target.value)
+
   }
 
   function getBrews() {

@@ -21,17 +21,22 @@ OpenBrewery DB:
 https://www.openbrewerydb.org/
 
 ## Major Hurdles/Unresolved issues:
-1. Struggling to setup the search form to target the text input. Currently getting a way too large view of the function I think, and probably not being able to find the text in the search bar. Submitted problem issue for resolution.  ➡️ EDIT 1: Trying to use the react-giphy-seacher repo for clarification on the not functioning search function.
-➡️ EDIT 2: Restructured search components so that handleSubmit and handleChange are on app level and can pass down as props. This also allows the searchbar to save the value of the searchbar input ✅
-1. Currently working to resolve white space issue ➡️ EDIT: switched out replace method with replaceAll method, which targets the 2nd white space
+1. Struggling to setup the search form to target the text input. Currently getting a way too large view of the function I think, and probably not being able to find the text in the search bar. Submitted problem issue for resolution. 
+    ➡️ EDIT 1: Trying to use the react-giphy-seacher repo for clarification on the not functioning search function.
+    ➡️ EDIT 2: Restructured search components so that handleSubmit and handleChange are on app level and can pass down as props. This also allows the searchbar to save the value of the searchbar input ✅
+1. Created a function that would change all uppercase letters to lowercase and replaces white space with underscores, but doesn't work for the 3rd word. Why? 
+    ➡️ EDIT 1: switched out replace method with replaceAll method, which targets the 2nd white space and resolves the issue ✅
+1. Current search bar input is checked at every single new string being entered. (just changing the handle change on the click breaks things). Need to change so that search only happens once go button is clicked. 
+    ➡️ Edit : I realized that I wasn't actually taking the handleChange object into the handleSubmit. Once the URL was setup (following issue), it was resolved. ✅
+2. Need cleanedInput directly be set to the value of Cities so that the URL updates automatically. Feels like previous question and this question are linked in a significant way.
+    ➡️ Edit: Took the event.target.value, ran it through the cleanup operation(I had to remove it ) ✅
+3. Attempted to reduce things down to just 1 fetch call, but realized that because the variable used for the list only has onChange with no onSubmit, any change in the state(like every single keypress of a city name) will call the fetch. Unless I want to build a handleSubmit for the list component, I'm better off leaving it as it is.
 
 #### Priorities:
 #####  SEARCH BAR NOTES: 
- 1. Current search bar input is checked at every single new string being entered. (just changing the handle change on the click breaks things). Need to change so that search only happens once go button is clicked.
- 2. Need to setup spacing and edge case projection.
+ 1. Need to setup spacing ✅ and edge case projection.❓
  ➡️ ➡️ Would prevent !@#$%^&*() symbols from being used & return a error message to the user.
 
- 3. Created a function that would change all uppercase letters to lowercase and replaces white space with underscores, but doesn't work for the 3rd word. Why?
 #### Viewer Notes:
 1. Current view only lists 25 results. Need to create option to keep searching for other results.
 1. Need to create scroll bar to view other results.
@@ -49,13 +54,14 @@ https://www.openbrewerydb.org/
 ## MVP Goals
 1. Website to actually pull the API information. ✅
 1. website to display brewery information. ✅
-1. Website to actually search cities for breweries. 
+1. Website to actually search cities for breweries. ✅
 1. Website to actually display breweries from the list of preselected cities. ✅
 ## Bronze:
 1. aesthetics, functioning logo that refreshes the page.
 1. link to the website. ✅
 1. Scroll bar in Viewer.
 1. Add styling to make presentable.
+1. Add code to make website not so long in the cards.
 
 ## Silver:
 

@@ -12,6 +12,7 @@ const Viewer = ({ views }) => {
                         <div className="card" key={view.id}>
                            <p>{view.name}</p> 
                            <p>{`${view.city}, ${view.state}`}</p>
+                           {/* style={{width: "100%"}} */}
                            <a href={view.website_url}>{view.website_url}</a>
 
                             {/* {console.log(view)} */}
