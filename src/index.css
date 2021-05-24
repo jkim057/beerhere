@@ -26,3 +26,8 @@ code {
   margin: 10px;
   padding: 2px;
 }
+
+.framework{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+}

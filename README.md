@@ -21,9 +21,9 @@ OpenBrewery DB:
 https://www.openbrewerydb.org/
 
 ## Major Hurdles/Unresolved issues:
-1. Struggling to setup the search form to target the text input. Currently getting a way too large view of the function I think, and probably not being able to find the text in the search bar. Submitted problem issue for resolution.  ➡️ Edit: Trying to use the react-giphy-seacher repo for clarification on the not functioning search function.
+1. Struggling to setup the search form to target the text input. Currently getting a way too large view of the function I think, and probably not being able to find the text in the search bar. Submitted problem issue for resolution.  ➡️ EDIT 1: Trying to use the react-giphy-seacher repo for clarification on the not functioning search function.
 ➡️ EDIT 2: Restructured search components so that handleSubmit and handleChange are on app level and can pass down as props. This also allows the searchbar to save the value of the searchbar input ✅
-1. Currently working to resolve white space issue
+1. Currently working to resolve white space issue ➡️ EDIT: switched out replace method with replaceAll method, which targets the 2nd white space
 
 #### Priorities:
 #####  SEARCH BAR NOTES: 

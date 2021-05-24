@@ -10,30 +10,41 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
 
   function handleChange(event) {
-    console.log(inputCleaner(event))
+   
+    // console.log(inputCleaner(event))
+    // moved contents of input cleaner inside handle change.
+    // was this the right call?
+
+    // let stgCk = event.target.value
+    // stgCk = stgCk.toLowerCase()
+    // stgCk = stgCk.replaceAll(" ", "_" )
+   
+    // console.log(stgCk)
+
 
     
+    // setSearchInput(stgCk);
+
+    //backup set search
     setSearchInput(event.target.value);
+    
        // inputCleaner();
   }
-  
+   
   function inputCleaner(event){
     let stgCk = event.target.value
-    stgCk = stgCk.toLowerCase().replace(" ", "_" )
-    console.log(stgCk)
+    stgCk = stgCk.toLowerCase()
+    stgCk = stgCk.replaceAll(" ", "_" )
+    return stgCk
+    // console.log(stgCk)
     //white space works for the first 2 words, but not the 3rd. why?
   }
-   // let e.toLowerCase()
-               // * if mispelled, return a error message to the user (" please check your spelling and try again")
-            // *take the string and make undercase
-            // * search.split(" ")
-            // *
-            // * seperate all spaces with _ (underscores)
-// 
+
+
 
   function handleSubmit(event) {
     event.preventDefault();
-    // console.log(event.target.value)
+    console.log(event.target.value)
     // inputCleaner();
   }
 
@@ -55,9 +66,6 @@ function App() {
   return (
     
     <div className="framework">
-      
-      
-  
       {/* <Route path ="/"  /> */}
       <Route path="/" exact component={Logo} />
       {/* logo to refresh the page */}
