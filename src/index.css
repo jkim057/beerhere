@@ -26,14 +26,16 @@ code {
 
 .searchCityCtnr{
   margin-top: 100px;
+  margin-bottom: 10px;
+  display: flex;
 }
 
+
 .input{
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 .logoDiv{
- 
   font-size: large;
   height: 100px;
   width: 125px;
