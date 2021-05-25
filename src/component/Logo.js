@@ -3,7 +3,7 @@ import React from 'react';
 const Logo = () => {
     return (
         <div className="logoDiv">
-            <p> BEER HERE</p>
+            <h1> BEER HERE</h1>
         </div>
     );
 };

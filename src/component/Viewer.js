@@ -13,10 +13,12 @@ const Viewer = ({ views }) => {
                            <p>{view.name}</p> 
                            <p>{`${view.city}, ${view.state}`}</p>
                                 {
+                                    view.phone && <p>{view.phone}</p>
+                                    // can i set a function to break up the phone number into (###)-###-#### format? INSIDE A MAP?
+                                }
+                                {
                                     view.website_url &&  <a target="_blank" href={view.website_url}>View Website</a>
                                 }
-
-                            {/* {console.log(view)} */}
                         </div>
                 )
             })}

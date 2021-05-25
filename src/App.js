@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import{ List, Logo, Search, Viewer} from './component'
-import { Route } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 
 import './App.css';
 
@@ -18,15 +18,12 @@ function App() {
   }  
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(searchInput)
     fetch(`https://api.openbrewerydb.org/breweries?by_city=${searchInput}`)
     .then((res) => res.json())
     .then((resJson) => {
       setViews(resJson)
-      // console.log(resJson)
     })
     .catch(console.error)
-    // console.log(event.target.value)
 
   }
 
@@ -35,7 +32,6 @@ function App() {
     .then((res) => res.json())
     .then((resJson) => {
       setViews(resJson)
-      // console.log(resJson)
     })
     .catch(console.error)
   }
@@ -49,10 +45,8 @@ function App() {
     
     <div className="framework">
 
-      <Route 
+      <Logo 
         className="sideBar"
-        path="/" 
-        exact component={Logo} 
         />
 
 

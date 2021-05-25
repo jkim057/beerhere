@@ -1,21 +1,19 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /* top level, contains all the components */
 .framework{
   display: grid;
   grid-template-columns: 150px 2fr;
+  /* font-family: 'Titillium Web', sans-serif; */
 }
 
 /* side bar styling */
@@ -24,6 +22,8 @@ code {
  }
 
 .logoDiv{
+ 
+  font-size: large;
   height: 100px;
   width: 100px;
   border: 1px solid black;
