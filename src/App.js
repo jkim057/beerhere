@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import{ List, Logo, Search, Viewer} from './component'
-import { Route, Link } from 'react-router-dom'
+
 
 import './App.css';
 
@@ -27,17 +27,22 @@ function App() {
 
   }
 
-  function getBrews() {
-    fetch(`https://api.openbrewerydb.org/breweries?by_city=${cities}`)
-    .then((res) => res.json())
-    .then((resJson) => {
-      setViews(resJson)
-    })
-    .catch(console.error)
-  }
+  // function getBrews() {
+  //   fetch(`https://api.openbrewerydb.org/breweries?by_city=${cities}`)
+  //   .then((res) => res.json())
+  //   .then((resJson) => {
+  //     setViews(resJson)
+  //   })
+  //   .catch(console.error)
+  // }
  
   useEffect(() => {
-      getBrews();
+    fetch(`https://api.openbrewerydb.org/breweries?by_city=${cities}`)
+      .then((res) => res.json())
+      .then((resJson) => {
+        setViews(resJson)
+      })
+      .catch(console.error)
   }, [cities,searchInput])
 
 

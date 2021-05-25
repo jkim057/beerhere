@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import React from 'react';
 
-const List = ({ views, cities, setCities }) => {
+
+const List = ({ setCities }) => {
     function handleChange(e) {
         setCities(e.target.id)
 
@@ -15,7 +15,7 @@ const List = ({ views, cities, setCities }) => {
             {popPlaces.map((pop) => {
                 return(
                         <div className="cityCard" key={pop}>
-                            <Link id={pop} onClick={handleChange}>{pop}</Link>
+                            <p id={pop} onClick={handleChange}>{pop}</p>
                         </div>
                 )
             })}

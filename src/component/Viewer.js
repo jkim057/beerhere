@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 
 const Viewer = ({ views }) => {
@@ -26,10 +26,10 @@ const Viewer = ({ views }) => {
                            <p>{`${view.city}, ${view.state}`}</p>
                                 {
                                     view.phone && <a href={`tel:${view.phone}`}>{numSplit(view.phone)}</a>
-                                    // can i set a function to break up the phone number into (###)-###-#### format? INSIDE A MAP?
+                                    // can i break up phone # into (###)-###-#### format inside map?
                                 }
                                 {
-                                    view.website_url && <a style={{display: "block"}}target="_blank" href={view.website_url}>View Website</a>
+                                    view.website_url && <a style={{display: "block"}} target="_blank" rel="noreferrer"  href={view.website_url}>View Website</a>
                                 }
                         </div>
                 )
