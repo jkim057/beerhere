@@ -40,7 +40,7 @@ https://www.openbrewerydb.org/
 #### Priorities:
 #####  SEARCH BAR NOTES: 
  1. Need to setup spacing ✅ and edge case projection.❓
-
+ 1. Adjusted positioning of searchbar.
 #### Viewer Notes:
 1. Current view only lists 25 results. Need to create option to keep searching for other results.
 1. Need to create scroll bar to view other results.
@@ -53,6 +53,7 @@ https://www.openbrewerydb.org/
 1. Created react App with : https://github.com/facebook/create-react-appneed 
 1. Added phone number with : https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number#:~:text=Adding%20an%20HTML%20Phone%20Number%20Call%20Link%20to%20your%20Website&text=Href%3Dtel%3A%20creates%20the%20call,the%20number%20it%20will%20call
 1. Added phone number styling with: https://stackoverflow.com/questions/4313841/insert-a-string-at-a-specific-index & https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+1. Added Titillium Web Font: https://fonts.google.com/specimen/Titillium+Web#pairings
 
 
 
