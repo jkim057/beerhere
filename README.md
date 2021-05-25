@@ -10,7 +10,7 @@ Check it out here! https://jok-beerhere.herokuapp.com/
 
 ## Wireframes:
 
-https://media.git.generalassemb.ly/user/35453/files/c17e4e80-b8af-11eb-8906-e7a5a53a0626
+![wireframe](https://user-images.githubusercontent.com/81879149/119552535-a5275980-bd68-11eb-8517-88aeb2dfef13.png)
 
 ## Technology Used:
 
