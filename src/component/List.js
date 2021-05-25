@@ -9,7 +9,7 @@ const List = ({ views, cities, setCities }) => {
     const popPlaces = ["new_york","los_angeles", "chicago", "houston", "phoenix", "philadelphia","san_diego","dallas","austin","boston" ]
 
     return (
-        <div>
+        <div className="sideBar">
             <p>Not sure where to get started? </p> <p>Take a look one of these cities below!</p>
             <section className="mainCities">
             {popPlaces.map((pop) => {

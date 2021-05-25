@@ -3,6 +3,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: BlanchedAlmond;
 }
 
 code {
@@ -13,23 +14,39 @@ code {
 .framework{
   display: grid;
   grid-template-columns: 150px 2fr;
-  /* font-family: 'Titillium Web', sans-serif; */
 }
 
 /* side bar styling */
  .sideBar{
-   background-color: cornflowerblue;
+  padding: 10px 0px 0px 10px;
+  /* padding-top: 15px; */
+  background-color: white;
  }
+
+
+.searchCityCtnr{
+  margin-top: 100px;
+}
+
+.input{
+  margin-left: 25px;
+}
 
 .logoDiv{
  
   font-size: large;
   height: 100px;
-  width: 100px;
-  border: 1px solid black;
+  width: 125px;
+  border: 1px;
   padding: 5px;
   margin: 10px;
-  position: center;
+  /* position: center; */
+  display:flex;
+  align-items: center;
+}
+.logoDiv h1{
+  margin: 0;
+
 }
  
 /* Contains the description of all breweries */
@@ -40,16 +57,20 @@ code {
   display:flex;
   flex-wrap: wrap;
   gap: 5px;
+  margin-left: 10px;
+  background-color: BurlyWood ;
+
   
 }
 
  /* contains individual brewery details */
 .card{
-  border: 1px solid black;
   width: 180px;
   height: 200px;
-  margin: 1px;
-  padding: 1px;
+  margin: 10px;
+  padding-left: 10px;
+  background-color: white;
+
 }
 
 

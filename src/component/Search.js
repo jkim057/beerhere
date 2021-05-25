@@ -6,14 +6,15 @@ const Search =  ({views, cities, setCities, handleSubmit, handleChange, searchIn
     return (
         <form onSubmit = {handleSubmit} className="form-horizontal searchCityCtnr">
             <input 
+                className="input"
                 placeholder="Search Cities" 
                 type="text" 
                 name="searchInput" 
-                // required
+                required
                 onChange={handleChange}
                 value={searchInput}
             />
-            <button type="submit">Search</button>
+            <button  type="submit">Search</button>
         </form>
         )
     }

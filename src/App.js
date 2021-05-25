@@ -45,13 +45,9 @@ function App() {
     
     <div className="framework">
 
-      <Logo 
-        className="sideBar"
-        />
-
+      <Logo />
 
       <Search 
-        className="sideBar"
         views={views} 
         cities={cities} 
         setCities={setCities} 
@@ -64,7 +60,6 @@ function App() {
 
       {/* onClick={onClick} */}
       <List 
-        className="sideBar"
         views={views} 
         cities={cities} 
         setCities={setCities}

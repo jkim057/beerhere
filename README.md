@@ -35,23 +35,24 @@ https://www.openbrewerydb.org/
     ➡️ Edit: Replaced name value of website link with "View Website" in order to have cards not stretch too far.
     ➡️ Changed card sizes to non-flexible values to keep card sizes consistent. But after catching this, I am considering if I should truncate the URL again.
 1. Started with placeholder logo. Need to make clickable and lead to "home page status" (refresh the page?)
+     ➡️ Edit: Realized everything exists on 1 page, no need for homepage link functionallity.
 
 #### Priorities:
 #####  SEARCH BAR NOTES: 
  1. Need to setup spacing ✅ and edge case projection.❓
- ➡️ ➡️ Would prevent !@#$%^&*() symbols from being used & return a error message to the user.
 
 #### Viewer Notes:
 1. Current view only lists 25 results. Need to create option to keep searching for other results.
 1. Need to create scroll bar to view other results.
+1. Added phone number styling and made it conditional for visiblity.
 
 #### Unsorted notes:
 1. There is a ``` index.js:1 Warning: Failed prop type: The prop `to` is marked as required in `Link`, but its value is `undefined`. ``` issue listed in my console.log, but does not critically break code as of right now. Will address in the future.
 
 ## Resources:
 1. Created react App with : https://github.com/facebook/create-react-appneed 
-
-
+1. Added phone number with : https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number#:~:text=Adding%20an%20HTML%20Phone%20Number%20Call%20Link%20to%20your%20Website&text=Href%3Dtel%3A%20creates%20the%20call,the%20number%20it%20will%20call
+1. Added phone number styling with: https://stackoverflow.com/questions/4313841/insert-a-string-at-a-specific-index & https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 
 
 
@@ -68,9 +69,10 @@ https://www.openbrewerydb.org/
 1. Scroll bar in Viewer.
 1. Add styling to make presentable.
 1. Add code to make website not so long in the cards.
+1. Setup edge case protection (Would prevent symbols from being used & return a error message to the user.)
 
 ## Silver:
 
 ## Gold:
 
-1. Set up GPS and link to google maps for directions.
+1. Set up GPS and link to google maps for directions. (Maybe an embedded Google map with a pin on those directions?)
