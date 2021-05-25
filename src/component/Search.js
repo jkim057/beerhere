@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-// import { Link } from 'react-router-dom'
+import React from 'react';
 
-const Search =  ({views, cities, setCities, handleSubmit, handleChange, searchInput}) => {
+const Search =  ({handleSubmit, handleChange, searchInput}) => {
 
     return (
         <form onSubmit = {handleSubmit} className="form-horizontal searchCityCtnr">

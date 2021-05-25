@@ -12,6 +12,7 @@ Check it out here! https://jok-beerhere.herokuapp.com/
 
 ![wireframe](https://user-images.githubusercontent.com/81879149/119552535-a5275980-bd68-11eb-8517-88aeb2dfef13.png)
 
+![Website MVP display](https://user-images.githubusercontent.com/81879149/119563020-06edc080-bd75-11eb-82d9-0475613b63cd.png)
 ## Technology Used:
 
 Javascript, HTML, CSS, React.js
@@ -35,7 +36,8 @@ https://www.openbrewerydb.org/
     ➡️ Edit: Replaced name value of website link with "View Website" in order to have cards not stretch too far.
     ➡️ Changed card sizes to non-flexible values to keep card sizes consistent. But after catching this, I am considering if I should truncate the URL again.
 1. Started with placeholder logo. Need to make clickable and lead to "home page status" (refresh the page?)
-     ➡️ Edit: Realized everything exists on 1 page, no need for homepage link functionallity.
+     ➡️ Edit: Realized everything exists on 1 page, no need for homepage link functionality.
+1. Added brewery numbers to the cards, used slice and string interpolation to add () around the area code[ the first 3 numbers] and seperated the numbers with - dashes.
 
 #### Priorities:
 #####  SEARCH BAR NOTES: 
@@ -73,6 +75,7 @@ https://www.openbrewerydb.org/
 1. Setup edge case protection (Would prevent symbols from being used & return a error message to the user.)
 
 ## Silver:
+1. Create icon/symbol for website
 
 ## Gold:
 

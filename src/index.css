@@ -60,9 +60,7 @@ code {
   flex-wrap: wrap;
   gap: 5px;
   margin-left: 10px;
-  background-color: BurlyWood ;
-
-  
+  background-color: BurlyWood ;  
 }
 
  /* contains individual brewery details */
@@ -73,6 +71,13 @@ code {
   padding-left: 10px;
   background-color: white;
 
+}
+
+.cityCard p{
+  margin: 0px;
+  cursor: pointer;
+  color:blue;
+  text-decoration: underline;
 }
 
 
