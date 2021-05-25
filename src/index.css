@@ -18,18 +18,27 @@ code {
   grid-template-columns: 150px 2fr;
 }
 
+/* side bar styling */
  .sideBar{
    background-color: cornflowerblue;
  }
 
-
+.logoDiv{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  position: center;
+}
+ 
 /* Contains the description of all breweries */
 .container{
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr 1fr;  */
   /* gap: 10px; */
   display:flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 5px;
   
 }

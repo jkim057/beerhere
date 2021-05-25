@@ -48,13 +48,13 @@ function App() {
   return (
     
     <div className="framework">
-      {/* <Route path ="/"  /> */}
+
       <Route 
         className="sideBar"
         path="/" 
         exact component={Logo} 
         />
-      {/* logo to refresh the page */}
+
 
       <Search 
         className="sideBar"

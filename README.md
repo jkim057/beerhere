@@ -31,7 +31,10 @@ https://www.openbrewerydb.org/
 2. Need cleanedInput directly be set to the value of Cities so that the URL updates automatically. Feels like previous question and this question are linked in a significant way.
     ➡️ Edit: Took the event.target.value, ran it through the cleanup operation(I had to remove it ) ✅
 3. Attempted to reduce things down to just 1 fetch call, but realized that because the variable used for the list only has onChange with no onSubmit, any change in the state(like every single keypress of a city name) will call the fetch. Unless I want to build a handleSubmit for the list component, I'm better off leaving it as it is.
-1.
+1. Had some confusion retrofitting website to have mobile formatting.
+    ➡️ Edit: Replaced name value of website link with "View Website" in order to have cards not stretch too far.
+    ➡️ Changed card sizes to non-flexible values to keep card sizes consistent. But after catching this, I am considering if I should truncate the URL again.
+1. Started with placeholder logo. Need to make clickable and lead to "home page status" (refresh the page?)
 
 #### Priorities:
 #####  SEARCH BAR NOTES: 
