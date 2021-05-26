@@ -18,13 +18,8 @@ function App() {
   }  
   function handleSubmit(event) {
     event.preventDefault();
-    fetch(`https://api.openbrewerydb.org/breweries?by_city=${searchInput}`)
-    .then((res) => res.json())
-    .then((resJson) => {
-      setViews(resJson)
-    })
-    .catch(console.error)
-
+    setCities(searchInput);
+    setSearchInput("")
   }
 
   // function getBrews() {
@@ -43,7 +38,7 @@ function App() {
         setViews(resJson)
       })
       .catch(console.error)
-  }, [cities,searchInput])
+  }, [cities])
 
 
   return (
